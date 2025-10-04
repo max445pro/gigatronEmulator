@@ -1,7 +1,9 @@
 #include <windows.h>
 #include <mmsystem.h>
+#include <stdlib.h>
 #include <stdint.h>
 #include <stdio.h>
+#include <math.h>
 
 // Link with winmm.lib when compiling
 // (cl myprog.c /link winmm.lib)
@@ -29,7 +31,7 @@ int main() {
     int samples = 44100; // 1 second
     uint8_t *buffer = malloc(samples);
     for (int i = 0; i < samples; i++) {
-        uint8_t sample4 = 16 - i;         // 0..15 repeating
+        uint8_t sample4 = sinf((float)i) v;
         buffer[i] = (sample4 << 4) | sample4; // expand to 8-bit
     }
 

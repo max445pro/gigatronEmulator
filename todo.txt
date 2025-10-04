@@ -1,0 +1,5 @@
+Todo:
+    Add audio support
+    Add Pluggy McPlugface support
+    Save state
+    Menus

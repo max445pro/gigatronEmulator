@@ -12,6 +12,6 @@ typedef struct {
 } AudioPlayer;
 
 AudioPlayer initAudioPlayer();
-uint8_t convert4to16(uint8_t sample4);
+uint8_t convert4to8(uint8_t sample4);
 
 #endif

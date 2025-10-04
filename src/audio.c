@@ -18,6 +18,6 @@ AudioPlayer initAudioPlayer() {
     return player;
 }
 
-uint8_t convert4to16(uint8_t sample4) {
-    return ((int16_t)sample4 - 8) * 4096;
+uint8_t convert4to8(uint8_t sample4) {
+    return sample4 * 17;
 }
